@@ -1,0 +1,15 @@
+.destaque {
+    background-color: yellow;
+}
+
+.sublinhado {
+    text-decoration: underline;
+}
+
+.nova_classe {
+    font-family: 'Comic Sans MS';
+}
+
+#clique_aqui {
+    margin-top: 20px;
+}
