@@ -222,3 +222,30 @@ botao.addEventListener('click', despedir); // é possível passsar mais de um ev
 outro.addEventListener('click', cumprimentar); // é possível reutilizar a function, onde agora
 // esse elemento também tem uma referência à cumprimentar
 
+const link = document.getElementById('link');
+const botao2 = document.getElementById('btn');
+
+let clicouEmLink = (e) => {
+    e.preventDefault(); // este comando fala que você quer fazer somente seus comandos, e não os padrões do elemento
+    alert('Clicou em link!');
+}
+
+link.addEventListener('click', clicouEmLink);
+
+botao2.addEventListener('click', () => link.dispatchEvent(new Event('click'))); // dispatchEvent disparar evento
+// é possível disparar um evento de um elemento através de outro
+
+// um grande problema em deixar a referencia ao js no final é o fato de que dependendo da sua lógica
+// podem ocorrer erros no código, pelo fato de o script carregar primeiro, antes de alguns elementos
+// necessários para o js funcionar. Para resolver isso, é necessário criar um evento no document
+// e jogar todo seu código na função que será passada na hora de adicionar o evento
+
+/* exemplo
+
+const inicar = () => {
+
+    TODO O SEU CÓDIGO
+}
+
+document.addEventListener('DOMContentLoaded', iniciar);
+*/

@@ -1,0 +1,19 @@
+body {
+    font-size: 1.25em;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    max-width: 300px;
+}
+
+form > * {
+    padding: 5px;
+}
+
+.invalido, /* para não escrever duas vezes, use vírgula para dizer que os dois seletores fazem o mesmo */
+input[type="checkbox"].invalido + label { /* se tiver um input do tipo checkbox que tiver a classe invalido */
+    color: red; /* o próximo elemento após ele terá a cor vermelha */
+
+}
