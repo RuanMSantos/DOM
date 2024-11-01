@@ -13,3 +13,15 @@
 #clique_aqui {
     margin-top: 20px;
 }
+
+#form {
+    transition: all 0.3s;
+    font-size: 2em;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 6px;
+}
+
+#form:hover {
+    background-color: yellow;
+}

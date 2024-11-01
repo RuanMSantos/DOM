@@ -1,11 +1,13 @@
 body {
+    font-family: 'Comic Sans MS';
     font-size: 1.25em;
+    background-color: rgb(82, 139, 82);
 }
 
 form {
-    display: flex;
     flex-flow: column;
     max-width: 300px;
+    display: flex;
 }
 
 form > * {
@@ -16,4 +18,12 @@ form > * {
 input[type="checkbox"].invalido + label { /* se tiver um input do tipo checkbox que tiver a classe invalido */
     color: red; /* o próximo elemento após ele terá a cor vermelha */
 
+}
+
+#titulo {
+    text-align: center;
+}
+
+#meio {
+    margin-left: 527px;
 }

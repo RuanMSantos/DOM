@@ -249,3 +249,5 @@ const inicar = () => {
 
 document.addEventListener('DOMContentLoaded', iniciar);
 */
+
+let atalho = () => window.location.href = 'exemplo.html';

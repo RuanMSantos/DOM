@@ -48,7 +48,11 @@ let processarForm = (e) => {
     };
     
     console.log(usuarioNovo);
+    alert('Cadastrado com sucesso!');
+    limparCampos();
 }
+
+const limparCampos = () => window.location.href = 'exemplo.html';
 
 const limparErro = e => e.currentTarget.classList.remove('invalido');
 
